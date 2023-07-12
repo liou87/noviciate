@@ -1,0 +1,275 @@
+@import url('antd/dist/reset.css');
+
+.details {
+    width: 100vw;
+    height: 100vh;
+    background: url(../assets/images/bg22.jpg);
+
+    background-size: 50% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+
+    .header {
+        position: absolute;
+        top: 20px;
+        left: 500px;
+    }
+
+    .selector {
+        position: absolute;
+        top: 193px;
+        left: 184px;
+        width: 337px;
+    }
+
+    .chart {
+        height: 100%;
+        width: 100%;
+    }
+
+    /* 通过百分比设置 */
+    .header {
+        height: 5%;
+        width: 38%;
+        background-color: rgba(0, 0, 0, 0.393);
+        align-items: center;
+        color: wheat;
+        display: flex;
+        font-size: 30px;
+        justify-content: center;
+        box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 40px;
+        left: 560px;
+
+        ul {
+            display: flex;
+            align-items: center;
+            padding: 0;
+            position: absolute;
+            top: 38px;
+            left: -390px;
+
+
+            a {
+                height: 60px;
+                line-height: 60px;
+                background-color: rgb(0, 0, 0);
+                // border: 1px red solid;
+                padding: 0 10px;
+                list-style: none;
+                text-decoration: none;
+                color: rgb(9, 65, 196);
+                font-size: 20px;
+
+
+
+            }
+
+
+            a.active {
+                border-top: 2px solid blue;
+
+
+                color: blue;
+
+            }
+
+            a:hover {
+                border-top: 2px solid blue;
+                color: blue;
+            }
+
+
+
+        }
+
+    }
+
+
+
+    .detailContent {
+        height: 70%;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        .contentHeader {
+            height: 55%;
+            width: 100%;
+            // border: 1px pink solid;
+
+            display: flex;
+            justify-content: space-between;
+
+            .detailchartone {
+                height: 100%;
+                width: 45%;
+                background-color: rgba(0, 0, 0, 0.393);
+                // border: 1px purple solid;
+                box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.9);
+
+                &:hover {
+                    box-shadow: 0px 0px 20px rgba(18, 149, 219, 0.455);
+                }
+            }
+
+            .detailcharttwo {
+                height: 100%;
+                width: 45%;
+                background-color: rgba(0, 0, 0, 0.393);
+                box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.9);
+
+                &:hover {
+                    box-shadow: 0px 0px 20px rgba(18, 149, 219, 0.455);
+                }
+
+                // border: 1px purple solid;
+
+
+                div {
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+
+                    form {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        color: rgb(236, 208, 186);
+                        list-style: none;
+                        background: url(../assets/icons/向右.png) no-repeat 320px 122px;
+
+
+
+                        ul {
+                            width: 35%;
+                            margin-left: 20px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-around;
+
+                            li {
+                                font-size: 20px;
+                                vertical-align: middle;
+                                font-weight: 700;
+                                list-style: none;
+
+                                img {
+                                    margin-top: -8px;
+                                    margin-right: 15px;
+                                }
+
+                            }
+
+                            li:nth-child(2n) {
+                                margin: 20px 0px;
+                            }
+
+                            select {
+                                width: 200px;
+                                height: 40px;
+                                color: black;
+                            }
+
+                            button {
+                                font-size: 20px;
+                                padding: 10px;
+                                color: black;
+
+                            }
+                        }
+
+
+
+
+                    }
+
+                }
+
+                div:nth-child(2) {
+                    width: 25%;
+                    height: 30%;
+                    font-weight: 700;
+                    font-size: 50px;
+                    position: absolute;
+                    top: 130px;
+                    right: 50px;
+                    background-color: rgba(0, 0, 0, 0.1);
+                    box-shadow: 0px 0px 20px rgba(18, 149, 219, 0.455);
+                    color: #cecece;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    .result {
+                        font-size: 20px;
+                        font-weight: 700;
+                        color: rgb(236, 208, 186);
+                        list-style: none;
+                        margin-bottom: 30px;
+                    }
+                }
+
+            }
+        }
+
+        .contentFooter {
+            height: 40%;
+            width: 100%;
+            // background-color: rgba(0, 0, 0, 0.393);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+
+            .detailchartthree {
+                height: 100%;
+                width: 30%;
+                background-color: rgba(0, 0, 0, 0.393);
+
+                box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.9);
+            }
+
+            .detailchartthree:hover {
+                box-shadow: 0px 0px 20px rgba(18, 149, 219, 0.455);
+            }
+
+            .detailchartfour {
+                height: 100%;
+                width: 30%;
+                background-color: rgba(0, 0, 0, 0.393);
+                box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.9);
+            }
+
+            .detailchartfour:hover {
+                box-shadow: 0px 0px 20px rgba(18, 149, 219, 0.455);
+            }
+
+            .detailchartfive {
+                height: 100%;
+                width: 30%;
+                background-color: rgba(0, 0, 0, 0.393);
+                box-shadow: 0px 0px 50px black;
+            }
+
+            .detailchartfive:hover {
+                box-shadow: 0px 0px 20px rgba(18, 149, 219, 0.455);
+            }
+        }
+
+    }
+
+}
+
+.salaryPrediction {
+    color: #fff;
+}
